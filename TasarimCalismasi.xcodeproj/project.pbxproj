@@ -13,6 +13,7 @@
 		F31A9FAE2B638BD40003DD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A9FAC2B638BD40003DD58 /* Main.storyboard */; };
 		F31A9FB02B638BD60003DD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31A9FAF2B638BD60003DD58 /* Assets.xcassets */; };
 		F31A9FB32B638BD60003DD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A9FB12B638BD60003DD58 /* LaunchScreen.storyboard */; };
+		F31A9FBC2B63A38A0003DD58 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F31A9FBB2B63A38A0003DD58 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,11 @@
 		F31A9FAF2B638BD60003DD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31A9FB22B638BD60003DD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31A9FB42B638BD60003DD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31A9FBB2B63A38A0003DD58 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		F31A9FBD2B63EE5C0003DD58 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		F31A9FBE2B63EE5C0003DD58 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F31A9FBF2B63EE670003DD58 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		F31A9FC02B63EE670003DD58 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,21 @@
 				F31A9FA62B638BD40003DD58 /* AppDelegate.swift */,
 				F31A9FA82B638BD40003DD58 /* SceneDelegate.swift */,
 				F31A9FAA2B638BD40003DD58 /* ViewController.swift */,
+				F31A9FBA2B63A35B0003DD58 /* Fonts */,
 				F31A9FAC2B638BD40003DD58 /* Main.storyboard */,
 				F31A9FAF2B638BD60003DD58 /* Assets.xcassets */,
 				F31A9FB12B638BD60003DD58 /* LaunchScreen.storyboard */,
 				F31A9FB42B638BD60003DD58 /* Info.plist */,
 			);
 			path = TasarimCalismasi;
+			sourceTree = "<group>";
+		};
+		F31A9FBA2B63A35B0003DD58 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F31A9FBB2B63A38A0003DD58 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +124,8 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
+				fr,
 			);
 			mainGroup = F31A9F9A2B638BD40003DD58;
 			productRefGroup = F31A9FA42B638BD40003DD58 /* Products */;
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F31A9FB32B638BD60003DD58 /* LaunchScreen.storyboard in Resources */,
+				F31A9FBC2B63A38A0003DD58 /* Pacifico-Regular.ttf in Resources */,
 				F31A9FB02B638BD60003DD58 /* Assets.xcassets in Resources */,
 				F31A9FAE2B638BD40003DD58 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +169,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F31A9FAD2B638BD40003DD58 /* Base */,
+				F31A9FBD2B63EE5C0003DD58 /* tr */,
+				F31A9FBF2B63EE670003DD58 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +179,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				F31A9FB22B638BD60003DD58 /* Base */,
+				F31A9FBE2B63EE5C0003DD58 /* tr */,
+				F31A9FC02B63EE670003DD58 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +193,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +257,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
